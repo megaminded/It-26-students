@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fan-blade {
+    width: 400px;
+    height: 10px;
+    background-color: red;
+}
+
+.fan:hover {
+    animation: rotating .3s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
